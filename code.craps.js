@@ -3,6 +3,7 @@ function countdownTimer() {
     console.log("countdownTimer()started");
 }
 
+// Begin playCraps
 function playCraps() {
     //troubleshooting playCraps() has started 
     console.log("playCraps() started");
@@ -20,8 +21,6 @@ function playCraps() {
     document.getElementById("die2Res").innerHTML = "The result for die2 is: " + die2;
 
     //check if craps (7 or 11)
-
-
     var sum = die1 + die2;
     if(sum == 7 || sum ==11){
         console.log ("you lose!!!!!!");
@@ -29,6 +28,7 @@ function playCraps() {
          //check for win (even doubles)
     }else if(die1 % 2 == 0 && die1 == die2){
         console.log ("you win!!!!!")
+    //check for tie
     }else{
         console.log("You did not win or lose.");
         doucument.getElementById("gamRes").innerHTML = "You did not win or lose. Please play again and WIN!";
